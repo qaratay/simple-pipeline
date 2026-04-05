@@ -50,7 +50,7 @@ with DAG(
         configuration={
             "query": {
                 "query": """
-                    CREATE TABLE IF NOT EXISTS raw.finelo_funnel_events_no_partition
+                    CREATE TABLE IF NOT EXISTS raw.finelo_funnel_events
                     (
                         customer_account_id STRING,
                         event_timestamp     TIMESTAMP,
