@@ -26,6 +26,7 @@ x-airflow-common:
     - ./airflow/config:/opt/airflow/config
     - ./airflow/plugins:/opt/airflow/plugins
     - ./dbt:/opt/dbt
+    - ./gcp-key.json:/opt/airflow/gcp-key.json
     - .:/workspace
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
