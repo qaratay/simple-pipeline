@@ -26,7 +26,6 @@ x-airflow-common:
     - ./airflow/config:/opt/airflow/config
     - ./airflow/plugins:/opt/airflow/plugins
     - ./dbt:/opt/dbt
-    - ./green-plasma-492308-t7-41991dc412c6.json:/opt/airflow/gcp-key.json:ro
     - .:/workspace
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
