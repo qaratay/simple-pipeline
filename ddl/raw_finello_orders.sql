@@ -16,6 +16,8 @@ CREATE TABLE raw.finelo_orders
     is_secured          BOOL,
     created_at          TIMESTAMP,
     updated_at          TIMESTAMP,
-    routing             JSON
+    routing             STRING,
+    PRIMARY KEY (order_id) NOT ENFORCED
 )
-PARTITION BY DATE (created_at);
+    PARTITION BY DATE (created_at)
+    CLUSTER BY status, type, geo_country;

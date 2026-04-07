@@ -2,3 +2,6 @@ __pycache__
 .env
 gcp-key.json
 airflow/logs/
+*.png
+presentation.*
+airflow.cfg

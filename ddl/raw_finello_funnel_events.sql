@@ -4,4 +4,5 @@ CREATE TABLE raw.finelo_funnel_events
     event_timestamp     TIMESTAMP,
     event_name          STRING
 )
-    PARTITION BY DATE (event_timestamp);
+    PARTITION BY DATE (event_timestamp)
+    CLUSTER BY event_name;

@@ -1,0 +1,10 @@
+name: simple_pipeline
+version: '1.0.0'
+profile: simple_pipeline
+
+model-paths: ["models"]
+
+models:
+  simple_pipeline:
+    marts:
+      +materialized: table
